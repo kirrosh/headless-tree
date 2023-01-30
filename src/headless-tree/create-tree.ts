@@ -49,7 +49,6 @@ export function makeStateUpdater<K extends keyof IState>(
 ) {
   return (updater: Updater<IState[K]>) => {
     (instance as any).setState(<TTableState>(old: TTableState) => {
-      console.log("old", { ...old });
       return {
         ...old,
         [key]: functionalUpdate(updater, (old as any)[key]),

@@ -1,11 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Tree } from '../components/Tree';
+import { Table } from '../components/Table';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<Tree client:only="solid-js"/>
+		<Table client:only="solid-js"/>
 	</main>
 </Layout>
 

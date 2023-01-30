@@ -13,8 +13,12 @@
   "dependencies": {
     "@astrojs/solid-js": "^2.0.0",
     "@astrojs/tailwind": "^3.0.0",
+    "@faker-js/faker": "^7.6.0",
     "astro": "^2.0.1",
     "solid-js": "^1.4.3",
     "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
   }
 }
